@@ -1,0 +1,294 @@
+/* Main styling for portfolio website */
+:root {
+    --primary-color: #3a86ff;
+    --secondary-color: #8338ec;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --success-color: #28a745;
+    --info-color: #17a2b8;
+    --accent-color: #ff006e;
+    --text-color: #212529;
+    --sidebar-width: 250px;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    color: var(--text-color);
+    background-color: #f4f7fa;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: var(--sidebar-width);
+    max-width: var(--sidebar-width);
+    background: var(--primary-color);
+    color: #fff;
+    transition: all 0.3s;
+    position: fixed;
+    height: 100vh;
+    z-index: 999;
+}
+
+#sidebar.active {
+    margin-left: calc(-1 * var(--sidebar-width));
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#sidebar .sidebar-header .profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    margin-bottom: 10px;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul li a {
+    padding: 10px 20px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+    border-left: 3px solid transparent;
+}
+
+#sidebar ul li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 3px solid white;
+}
+
+#sidebar ul li.active > a {
+    background: rgba(255, 255, 255, 0.15);
+    border-left: 3px solid white;
+    font-weight: bold;
+}
+
+#sidebar ul li > a[aria-expanded="true"] {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#sidebar ul ul a {
+    font-size: 0.9em;
+    padding-left: 40px;
+}
+
+#content {
+    width: 100%;
+    padding: 0;
+    min-height: 100vh;
+    transition: all 0.3s;
+    margin-left: var(--sidebar-width);
+}
+
+#content.active {
+    margin-left: 0;
+}
+
+#sidebarCollapse {
+    background: var(--primary-color);
+    border: none;
+}
+
+#sidebarCollapse:hover {
+    background: var(--secondary-color);
+}
+
+/* Home page styling */
+.welcome-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.banner-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.purpose {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    border-left: 5px solid var(--primary-color);
+}
+
+.tech-icons {
+    margin-top: 40px;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.icons-container i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    transition: transform 0.3s, color 0.3s;
+}
+
+.icons-container i:hover {
+    transform: scale(1.2);
+    color: var(--secondary-color);
+}
+
+/* About page styling */
+.about-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+}
+
+.about-profile-img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-section, .skills-section, .interests-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.education-section h3, .skills-section h3, .interests-section h3 {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+/* Project pages styling */
+.project-explanation {
+    margin-top: 20px;
+}
+
+.project-explanation h3 {
+    color: var(--primary-color);
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.pdf-container {
+    margin-top: 40px;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.pdf-container iframe {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: calc(-1 * var(--sidebar-width));
+    }
+    
+    #sidebar.active {
+        margin-left: 0;
+    }
+    
+    #content {
+        margin-left: 0;
+    }
+    
+    #content.active {
+        margin-left: var(--sidebar-width);
+    }
+    
+    #sidebarCollapse span {
+        display: none;
+    }
+    
+    .icons-container {
+        flex-wrap: wrap;
+    }
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Add these styles to your existing CSS file */
+
+.hobbies-section {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.hobby-card {
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hobby-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.hobby-card .card-img-top {
+    height: 240px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hobby-card .card-body {
+    padding: 20px;
+}
+
+.hobby-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 8px;
+}
+
+.hobby-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}

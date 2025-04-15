@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Bhagyesh Jethwani</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="pfp.jpg" alt="Bhagyesh Jethwani" class="profile-img">
+                <h3>Bhagyesh Jethwani</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="active">
+                    <a href="about.html"><i class="fas fa-user"></i> About Me</a>
+                </li>
+                <li>
+                    <a href="#projectsSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-project-diagram"></i> Projects
+                    </a>
+                    <ul class="collapse list-unstyled" id="projectsSubmenu">
+                        <li>
+                            <a href="jobmaterials.html">Job Materials</a>
+                        </li>
+                        <li>
+                            <a href="proposal.html">Research Proposal</a>
+                        </li>
+                        <li>
+                            <a href="instructions.html">Technical Instructions</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Menu</span>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>About Me!</h1>
+                        
+                        <div class="about-content purpose">
+                            <div class="introduction mb-4">
+                                <p>Hello! My name is Bhagyesh Jethwani and I am a student at the University of Central Florida. I plan to graduate in December 2027 with my BS in Computer Science.</p>
+                                <p>I am a student highly passionate about Artificial Intelligence, Augmented Reality, and Robotics. My goal is to one day start my own startup which will involve creating a product entailing skills and features from each of these fields!</p>
+                            </div>
+                            
+                            <h3><i class="fas fa-futbol"></i> Sports & Activities</h3>
+                            <div class="row hobbies-section mb-4">
+                                <div class="col-md-6">
+                                    <div class="card hobby-card">
+                                        <img src="soccer_game.jpg" class="card-img-top" alt="Soccer Stadium">
+                                        <div class="card-body">
+                                            <h4>Soccer</h4>
+                                            <p>Soccer has been one of my favorite sports since childhood. I enjoy both playing and watching professional matches. The teamwork, strategy, and physical demands of soccer provide an excellent way to stay active while building important collaborative skills. I often play on weekends with friends at local fields and follow professional leagues during the season.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card hobby-card">
+                                        <img src="pickleball.jpg" class="card-img-top" alt="Pickleball Court">
+                                        <div class="card-body">
+                                            <h4>Pickleball</h4>
+                                            <p>Pickleball is a newer passion I've developed during my time at university. This fast-paced paddle sport combines elements of tennis, badminton, and ping-pong. I appreciate how accessible it is for players of all skill levels while still offering a competitive challenge. The court's smaller size promotes quick reflexes and strategic shot placement, which I find both mentally and physically engaging.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <p>In my free time, I also enjoy reading news about the latest technologies and scientific breakthroughs happening around the world in various fields. These activities provide balance to my academic pursuits.</p>
+                            
+                            <p>I also have extraordinary skill in playing chess, and composing beats and music as I have participated in these hobbies competitively since I was a kid.</p>
+                            
+                            <p>Throughout this portfolio website, you can find some of my projects which I have built completely from scratch utilizing what I learned from all these fields!</p>
+                            
+                            <div class="education-section mt-5">
+                                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h4>Bachelor of Science in Computer Science</h4>
+                                        <h5>University of Central Florida</h5>
+                                        <p>Expected Graduation: December 2027</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery (needed for sidebar toggle) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

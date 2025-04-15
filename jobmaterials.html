@@ -1,10 +1,121 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-    <title>Job Materials</title>
-    <link rel = "stylesheet" href ="jobmaterials.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Materials - Bhagyesh Jethwani</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="pfp.jpg" alt="Bhagyesh Jethwani" class="profile-img">
+                <h3>Bhagyesh Jethwani</h3>
+            </div>
 
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li>
+                    <a href="about.html"><i class="fas fa-user"></i> About Me</a>
+                </li>
+                <li>
+                    <a href="#projectsSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-project-diagram"></i> Projects
+                    </a>
+                    <ul class="collapse show list-unstyled" id="projectsSubmenu">
+                        <li class="active">
+                            <a href="jobmaterials.html">Job Materials</a>
+                        </li>
+                        <li>
+                            <a href="proposal.html">Research Proposal</a>
+                        </li>
+                        <li>
+                            <a href="instructions.html">Technical Instructions</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
+        <!-- Page Content -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Menu</span>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Professional Job Materials</h1>
+                        
+                        <div class="project-explanation">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h3>Assignment Overview</h3>
+                                    <p>For this technical communication course assignment, I was tasked with creating professional job application materials, including a comprehensive resume. The primary objective was to develop documents that effectively communicate my skills, experiences, and qualifications to potential employers in a clear, concise, and visually appealing format.</p>
+                                    
+                                    <h3>My Approach</h3>
+                                    <p>When approaching this assignment, I first conducted research on best practices for resume design and content in the tech industry. I wanted to create a document that would not only list my qualifications but tell a compelling story about my professional journey and capabilities. I focused on organizing information hierarchically, placing the most relevant details prominently while ensuring all sections flowed logically.</p>
+                                    
+                                    <p>I carefully selected appropriate technical terminology to demonstrate my familiarity with industry standards while avoiding excessive jargon that might confuse non-technical readers. Additionally, I prioritized creating a clean, scannable layout knowing that recruiters typically spend only seconds reviewing each resume initially.</p>
+                                    
+                                    <h3>Revisions Made</h3>
+                                    <p>After receiving feedback from peers and instructors, I made several key revisions to enhance the effectiveness of my resume:</p>
+                                    
+                                    <ul>
+                                        <li>Strengthened action verbs throughout to better highlight my accomplishments and contributions</li>
+                                        <li>Refined the visual hierarchy to guide the reader's eye more effectively through the document</li>
+                                        <li>Added quantifiable achievements where possible to provide concrete evidence of my capabilities</li>
+                                        <li>Condensed certain sections to improve readability while maintaining comprehensive content</li>
+                                        <li>Ensured consistent formatting and removed redundant information to create a more streamlined document</li>
+                                    </ul>
+                                    
+                                    <h3>Reflections on Technical Communication</h3>
+                                    <p>This assignment significantly deepened my understanding of technical communication principles. I learned that effective technical communication extends beyond simply conveying information—it requires strategic organization, audience awareness, and careful attention to both content and presentation.</p>
+                                    
+                                    <p>Working on my resume taught me the importance of considering the reader's perspective and needs. I realized that different audiences might interpret the same information differently, making it essential to craft messages with the specific reader in mind. In this case, I needed to balance technical specificity with accessibility for HR professionals who might not have specialized knowledge in my field.</p>
+                                    
+                                    <p>Additionally, I gained appreciation for the iterative nature of effective technical communication. The revision process was invaluable for refining both content and presentation. Each round of feedback helped me see blind spots in my communication and identify opportunities to enhance clarity and impact.</p>
+                                    
+                                    <p>Perhaps most importantly, this assignment reinforced that technical communication is fundamentally about building bridges—connecting my experiences and capabilities with the needs and expectations of potential employers. This perspective has changed how I approach all forms of professional communication, encouraging me to focus first on understanding my audience before crafting my message.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pdf-container">
+                                <h3>My Resume</h3>
+                                <div class="ratio ratio-1x1">
+                                    <iframe src="bhagyeshjethwani_resume.pdf" width="100%" height="500px"></iframe>
+                                </div>
+                                <p class="text-center mt-2">
+                                    <a href="bhagyeshjethwani_resume.pdf" class="btn btn-primary" download>Download PDF</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery (needed for sidebar toggle) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>

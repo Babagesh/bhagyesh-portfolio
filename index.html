@@ -1,20 +1,100 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-    <title>Homepage</title>
-    <link rel ="stylesheet" href = "home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhagyesh Jethwani - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Bhagyesh Jethwani</h1>
-    <img id = "grabber" src = "pfp.jpg" width = "240" height = "240" alt = "Profile Picture">
-    <div class = "purpose">
-        <h2>Purpose: </h2>
-        <p> Hello! Welcome to my portfolio website which I have programmed from scratch! </p>
-        <p>Here you can find my Resume, Projects, Education, and other experiences!</p>
-        <p> You can use the side bar to navigate through my portfolio website.</p>
-        <a href = "aboutme.html">About Me!</a>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="pfp.jpg" alt="Bhagyesh Jethwani" class="profile-img">
+                <h3>Bhagyesh Jethwani</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li>
+                    <a href="about.html"><i class="fas fa-user"></i> About Me</a>
+                </li>
+                <li>
+                    <a href="#projectsSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-project-diagram"></i> Projects
+                    </a>
+                    <ul class="collapse list-unstyled" id="projectsSubmenu">
+                        <li>
+                            <a href="resume.html">Job Materials</a>
+                        </li>
+                        <li>
+                            <a href="proposal.html">Research Proposal</a>
+                        </li>
+                        <li>
+                            <a href="instructions.html">Technical Instructions</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Menu</span>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 welcome-section">
+                        <h2>Welcome to My Portfolio</h2>
+                        <img src="banner.png" alt="Portfolio Banner" class="banner-img">
+                        <div class="purpose mt-4">
+                            <h3>Purpose</h3>
+                            <p>Hello! Welcome to my portfolio website which I have programmed using HTML, CSS, and Bootstrap!</p>
+                            <p>This website showcases my technical communication skills through various projects completed during my academic journey at the University of Central Florida.</p>
+                            <p>Here you can explore:</p>
+                            <ul>
+                                <li><strong>About Me:</strong> Learn about my educational background, skills, and professional experience</li>
+                                <li><strong>Job Materials:</strong> View my professional resume and cover letter</li>
+                                <li><strong>Research Proposal:</strong> Explore my research proposal on emerging technologies</li>
+                                <li><strong>Technical Instructions:</strong> Read my detailed technical documentation</li>
+                            </ul>
+                            <p>Use the sidebar navigation menu to browse through different sections of this portfolio. Click on the toggle button at the top to collapse or expand the sidebar as needed.</p>
+                        </div>
+                        <div class="tech-icons mt-5">
+                            <h4>Technologies Used</h4>
+                            <div class="icons-container">
+                                <i class="fab fa-html5" title="HTML5"></i>
+                                <i class="fab fa-css3-alt" title="CSS3"></i>
+                                <i class="fab fa-js" title="JavaScript"></i>
+                                <i class="fab fa-bootstrap" title="Bootstrap"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery (needed for sidebar toggle) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
