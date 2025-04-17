@@ -100,12 +100,15 @@ body {
 }
 
 #sidebarCollapse {
-    background: var(--primary-color);
+    background-color: #1e3a8a; /* Vibrant dark blue */
     border: none;
+    color: white;
+    box-shadow: 0 0 8px rgba(30, 58, 138, 0.5); /* Subtle glow effect */
 }
 
 #sidebarCollapse:hover {
-    background: var(--secondary-color);
+    background-color: #162c6a; /* Slightly darker blue for hover effect */
+    box-shadow: 0 0 12px rgba(22, 44, 106, 0.7); /* Enhanced glow on hover */
 }
 
 /* Home page styling */
@@ -291,4 +294,17 @@ h2 {
 .hobby-card p {
     font-size: 0.95rem;
     line-height: 1.6;
+}
+
+.btn-primary {
+    background-color: #1e3a8a; /* Vibrant dark blue */
+    border-color: #1e3a8a;
+    color: white;
+    box-shadow: 0 0 8px rgba(30, 58, 138, 0.5); /* Subtle glow effect */
+}
+
+.btn-primary:hover {
+    background-color: #162c6a; /* Slightly darker blue for hover effect */
+    border-color: #162c6a;
+    box-shadow: 0 0 12px rgba(22, 44, 106, 0.7); /* Enhanced glow on hover */
 }
